@@ -1,15 +1,3 @@
-// TODO: API KEY IS NOT PRIVATE ON PUBLIC REPO...FIND A WAY TO   GET API CALLs
-// Blocked mixed error..
-//
-//
-//
-//
-//
-
-if (process.env.NETLIFY === 'true') {
-  console.log("TRUE");
-}
-
 const unitsSelect = document.getElementById("units");
 const getWeatherBtn = document.getElementById("get-weather-btn");
 const weatherInfo = document.getElementById("weather-info");
@@ -21,7 +9,7 @@ locationInput.focus();
 const locationNameDisplay = document.getElementById("location-name");
 const locationTempDisplay = document.getElementById("location-temp");
 const locationWeatherDescDisplay = document.getElementById("location-weather-desc");
-
+const API_KEY = '5ba5ccfb59a0d086243722867e82b116';
 const API_URL = "http://api.openweathermap.org/data/2.5/weather?q=";
 var units = "imperial";
 // units=metric for C or units=imperial for F
