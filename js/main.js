@@ -5,6 +5,11 @@
 //
 //
 //
+
+if (process.env.NETLIFY === 'true') {
+  console.log("TRUE");
+}
+
 const unitsSelect = document.getElementById("units");
 const getWeatherBtn = document.getElementById("get-weather-btn");
 const weatherInfo = document.getElementById("weather-info");
@@ -20,7 +25,6 @@ const locationWeatherDescDisplay = document.getElementById("location-weather-des
 const API_URL = "http://api.openweathermap.org/data/2.5/weather?q=";
 var units = "imperial";
 // units=metric for C or units=imperial for F
-console.log(process.env);
 // Listen for Enter key on input field
 locationInput.addEventListener("keyup", function onEvent(e) {
   if (e.keyCode === 13) {
