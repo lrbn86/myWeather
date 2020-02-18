@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#app-title {
+  font-size: 36pt;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 25px;
+  margin-bottom: 10px;
+}
+#weather-info {
+  font-size: 35pt;
+  padding: 25px;
+  text-align: center;
+}
+
+#weather-info > p {
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+}
+
+input, select {
+  font-size: 16pt;
+  padding: 10px;
+}
+#get-weather-btn {
+  background-color: black;
+  color: orange;
+  transition: opacity 0.2s ease-in, padding 0.2s ease-in;
+  border: none;
+}
+#get-weather-btn:hover {
+  opacity: 85%;
+  cursor: pointer;
+  padding: 9px;
+}
+#get-weather-btn:active {
+  box-shadow: 3px 5px;
+}
+a {
+  color: orange;
+  transition: opacity 0.2s ease-in;
+}
+a:hover {
+  opacity: 50%;
+}
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+}
