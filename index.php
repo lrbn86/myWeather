@@ -59,7 +59,7 @@
     </p>
     <p id="location-temp">
       <?php
-        if (!empty($_GET["location"])) {
+        if ($_GET["location"] != "") {
           echo $temp . "&#176" . $units;
         }
       ?>
