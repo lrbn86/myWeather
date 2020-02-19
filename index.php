@@ -74,5 +74,6 @@
     By Brandon Nguyen (<a href="https://www.brandonnguyen.dev/" target="_blank">@lrbn86</a>). 
     Data: <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
   </footer>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
