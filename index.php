@@ -59,7 +59,9 @@
     </p>
     <p id="location-temp">
       <?php
-        echo $temp . "&#176" . $units;
+        if (!empty($_GET["location"])) {
+          echo $temp . "&#176" . $units;
+        }
       ?>
     </p>
     <p id="location-weather-desc">
